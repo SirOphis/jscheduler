@@ -61,6 +61,20 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.spotify.fmt</groupId>
+				<artifactId>fmt-maven-plugin</artifactId>
+				<version>${fmt-format.version}</version>
+				<executions>
+					<execution>
+						<id>google-java-format</id>
+						<goals>
+							<goal>format</goal>
+						</goals>
+						<phase>validate</phase>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<packaging>pom</packaging>
